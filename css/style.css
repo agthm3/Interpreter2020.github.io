@@ -1738,10 +1738,39 @@ button.btn-cont-w3 {
     width: 50px;
 }
 
-.triDharma{
-    font-family: Poppins,sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    color: #212529;
-}
+
 /* //responsive */
+
+/* STYLE FOR FILOSOFI */
+section.filosofi-logo{
+    background-color: rgb(233, 233, 233);
+    padding: 20px;
+}
+div h1.capt-logo{
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+div p.filosofi1{
+    font-size: 17px;
+}
+
+section.filosofi-logo div.card h1{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+div.card.p-4.ukuran{
+    height: 576px;
+}
+
+.for-shadow{
+    -webkit-box-shadow: 0px 11px 10px 1px rgba(58, 52, 82, 0.1);
+    -moz-box-shadow: 0px 11px 10px 1px rgba(58, 52, 82, 0.1);
+    box-shadow: 0px 11px 10px 1px rgba(58, 52, 82, 0.1);
+}
+
+img.white{
+    border: 1px solid grey;
+}
+
