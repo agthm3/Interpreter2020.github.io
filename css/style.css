@@ -1770,7 +1770,30 @@ div.card.p-4.ukuran{
     box-shadow: 0px 11px 10px 1px rgba(58, 52, 82, 0.1);
 }
 
+.for-shadow-dark{
+    -webkit-box-shadow: 0px 11px 10px 1px rgba(255, 255, 255, 0.829);
+    -moz-box-shadow: 0px 11px 10px 1px rgba(255, 255, 255, 0.829);
+    box-shadow: 0px 11px 10px 1px rgba(255, 255, 255, 0.829);
+}
+
 img.white{
     border: 1px solid grey;
 }
 
+section.konstruksi-logo .row.mt-4{
+    height: 400px;
+}
+
+.card-img-top.ukuran-logo{
+    width: 50%;
+    margin: auto;
+}
+
+section.konstruksi-logo .col-md-4 img{
+    margin: auto;
+}
+
+.card-img-top.alternatif{
+    width: 40%;
+    margin: auto;
+}
