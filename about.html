@@ -4,12 +4,7 @@
 
 	<head>
 		<title>INTERPRETER 2020</title>
-		<script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
-		<script>
-$(document).ready(function(){
-$(".preloader").fadeOut();
-})
-</script>
+	
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="UTF-8" />
@@ -39,13 +34,10 @@ $(".preloader").fadeOut();
 		<!--  -->
 	</head>
 
-<body>
-<div class="preloader">
-  <div class="loading">
-    <img src="css/poi.gif" width="80">
-    <p>Harap Tunggu</p>
-  </div>
-</div>
+<body onload="myFunction()" style="margin:0;">
+<div id="loader"></div>
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
 	<!-- main banner -->
 	<div class="main-top" id="home">
 		<!-- header -->
@@ -338,5 +330,30 @@ $(".preloader").fadeOut();
 	<!-- //copyright bottom -->
 
 </body>
+<script>
+
+// Loading Page
+
+var myVar;
+
+
+
+function myFunction() {
+
+myVar = setTimeout(showPage, 500);
+
+}
+
+
+
+function showPage() {
+
+document.getElementById("loader").style.display = "none";
+
+document.getElementById("myDiv").style.display = "block";
+
+}
+
+</script>
 
 </html>
