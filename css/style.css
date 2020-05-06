@@ -168,6 +168,9 @@ body a {
 
 .icon {
     width: 140px;
+    position: center;
+    margin-bottom: 1ram;
+    position: static;
 }
 
 .mainName {
