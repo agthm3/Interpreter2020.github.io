@@ -1,106 +1,76 @@
 /* Center the loader */
 
 #loader {
-
     position: absolute;
-    
     left: 50%;
-    
     top: 50%;
-    
     z-index: 1;
-    
     width: 150px;
-    
     height: 150px;
-    
     margin: -75px 0 0 -75px;
-    
     border: 16px solid #f3f3f3;
-    
     border-radius: 50%;
-    
     border-top: 16px solid #3498db;
-    
     width: 120px;
-    
     height: 120px;
-    
     -webkit-animation: spin 2s linear infinite;
-    
     animation: spin 2s linear infinite;
-    
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
     }
-    
-    
-    
-    @-webkit-keyframes spin {
-    
-    0% { -webkit-transform: rotate(0deg); }
-    
-    100% { -webkit-transform: rotate(360deg); }
-    
+    100% {
+        -webkit-transform: rotate(360deg);
     }
-    
-    
-    
-    @keyframes spin {
-    
-    0% { transform: rotate(0deg); }
-    
-    100% { transform: rotate(360deg); }
-    
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
     }
-    
-    
-    
-    /* Add animation to "page content" */
-    
-    .animate-bottom {
-    
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Add animation to "page content" */
+
+.animate-bottom {
     position: relative;
-    
     -webkit-animation-name: animatebottom;
-    
     -webkit-animation-duration: 1s;
-    
     animation-name: animatebottom;
-    
     animation-duration: 1s
-    
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
     }
-    
-    
-    
-    @-webkit-keyframes animatebottom {
-    
-    from { bottom:-100px; opacity:0 }
-    
-    to { bottom:0px; opacity:1 }
-    
+    to {
+        bottom: 0px;
+        opacity: 1
     }
-    
-    
-    
-    @keyframes animatebottom {
-    
-    from{ bottom:-100px; opacity:0 }
-    
-    to{ bottom:0; opacity:1 }
-    
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
     }
-    
-    
-    
-    #myDiv {
-    
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+#myDiv {
     display: none;
-    
-    }
-
-
-
-
+}
 
 body {
     padding: 0;
@@ -117,14 +87,15 @@ body {
     height: 100%;
     z-index: 9999;
     background-color: #fff;
-  }
-  .preloader .loading {
+}
+
+.preloader .loading {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     font: 14px arial;
-  }
+}
 
 body button,
 .btn,
@@ -136,22 +107,26 @@ body a {
     -ms-transition: 0.5s all;
 }
 
-
-.rowtri{
+.rowtri {
     display: flex;
     justify-content: space-between;
 }
-.tri1,.tri2,.tri3{
-    box-shadow: 5px 7px 23px 0px rgba(58, 52, 82, 0.16);
+
+.tri1,
+.tri2,
+.tri3 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
 }
 
-.subtri{
+.subtri {
     margin-top: 30px;
 }
-.tri2{
+
+.tri2 {
     margin-left: 30px;
 }
-.tri3{
+
+.tri3 {
     margin-left: 30px;
 }
 
@@ -168,6 +143,9 @@ body a {
 
 .icon {
     width: 140px;
+    position: center;
+    margin-bottom: 1ram;
+    position: static;
 }
 
 .mainName {
@@ -1846,36 +1824,38 @@ button.btn-cont-w3 {
 
 /* //responsive */
 
+
 /* STYLE FOR FILOSOFI */
-section.filosofi-logo{
+
+section.filosofi-logo {
     background-color: rgb(233, 233, 233);
     padding: 20px;
 }
-div h1.capt-logo{
+
+div h1.capt-logo {
     font-weight: bolder;
     font-size: 25px;
 }
 
-div p.filosofi1{
+div p.filosofi1 {
     font-size: 17px;
 }
 
-section.filosofi-logo div.card h1{
+section.filosofi-logo div.card h1 {
     font-size: 20px;
     font-weight: bolder;
 }
 
-div.card.p-4.ukuran{
+div.card.p-4.ukuran {
     height: 576px;
 }
 
-.for-shadow{
+.for-shadow {
     -webkit-box-shadow: 0px 11px 10px 1px rgba(58, 52, 82, 0.1);
     -moz-box-shadow: 0px 11px 10px 1px rgba(58, 52, 82, 0.1);
     box-shadow: 0px 11px 10px 1px rgba(58, 52, 82, 0.1);
 }
 
-img.white{
+img.white {
     border: 1px solid grey;
 }
-
