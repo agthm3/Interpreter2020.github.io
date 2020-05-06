@@ -4,6 +4,7 @@
 
 	<head>
 		<title>INTERPRETER 2020</title>
+	
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="UTF-8" />
@@ -33,7 +34,10 @@
 		<!--  -->
 	</head>
 
-<body>
+<body onload="myFunction()" style="margin:0;">
+<div id="loader"></div>
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
 	<!-- main banner -->
 	<div class="main-top" id="home">
 		<!-- header -->
@@ -53,7 +57,7 @@
 							<ul class="menu">
 								<li><a href="index.html" class="active">Beranda</a></li>
 								<li><a href="about.html">Tentang INTERPRETER</a></li>
-								<li><a href="pricing.html">Filosofi Logo</a></li>
+								<li><a href="filosofi.html">Filosofi Logo</a></li>
 								<li><a href="contact.html">Kontak Kami</a></li>
 							</ul>
 						</nav>
@@ -231,7 +235,7 @@
 						</div>
 					</div>
 				</div>
-
+				<div class="col-lg-2 col-sm- ab-content text-center mt-lg-0 mt-4"></div>
 					<div class="col-lg-4 col-sm-6 ab-content text-center mt-lg-0 mt-4">
 					<div class="ab-content-inner-bawah">
 						<img src="images/t3.jpg" alt="news image" class="img-fluid">
@@ -248,13 +252,6 @@
 						</div>
 					</div>
 				</div>
-
-					<div class="col-lg-4 col-sm-6 ab-content text-center mt-lg-0 mt-4">
-					<div class="ab-content-inner-bawah-tengah">
-					
-					</div>
-				</div>
-
 					<div class="col-lg-4 col-sm-6 ab-content text-center mt-lg-0 mt-4">
 					<div class="ab-content-inner-bawah">
 						<img src="images/t3.jpg" alt="news image" class="img-fluid">
@@ -333,5 +330,30 @@
 	<!-- //copyright bottom -->
 
 </body>
+<script>
+
+// Loading Page
+
+var myVar;
+
+
+
+function myFunction() {
+
+myVar = setTimeout(showPage, 500);
+
+}
+
+
+
+function showPage() {
+
+document.getElementById("loader").style.display = "none";
+
+document.getElementById("myDiv").style.display = "block";
+
+}
+
+</script>
 
 </html>
