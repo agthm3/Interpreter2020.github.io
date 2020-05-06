@@ -1,3 +1,8 @@
+/* Tambahan Filosofi */
+div.card img.filosofi.card-img-top{
+  width: 150px;
+  margin: auto;
+}
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors

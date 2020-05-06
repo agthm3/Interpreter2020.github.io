@@ -2,6 +2,8 @@
 <html lang="zxx">
 
 <head>
+    <meta http-equiv="content-type" content="text/html" />
+    <meta name="author" content="lolkittens" />
     <title>INTERPRETER 2020</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,7 +35,10 @@
 
 </head>
 
-<body>
+
+    <body onload="myFunction()" style="margin:0;">
+        <div id="loader"></div>
+        <div style="display:none;" id="myDiv" class="animate-bottom">
     <!-- main banner -->
     <div class="main-top" id="home">
 
@@ -55,7 +60,7 @@
                             <ul class="menu">
                                 <li><a href="index.html" class="active">Beranda</a></li>
                                 <li><a href="about.html">Tentang INTERPRETER</a></li>
-                                <li><a href="#">Filosofi Logo</a></li>
+                                <li><a href="filosofi.html">Filosofi Logo</a></li>
                                 <li><a href="#">Kontak Kami</a></li>
                             </ul>
                         </nav>
@@ -81,7 +86,7 @@
             <div class="container">
                 <div class="d-md-flex">
                     <div class="w3ls_banner_txt">
-                        <h3 class="w3ls_pvt-title">Bakti Sosial <br><span>INTERPRETER 2020</span></h3>
+                        <h3 class="w3ls_pvt-title">Bakti Sosial  <br><span>INTERPRETER 2020</span></h3>
                         <p class="text-sty-banner"> INTERPRETER (Informatics egineering on Publics Care and technologies Empower), nama kegiatan kami telah memaknai konsep kami dan konsep kami sangat efektif dalam hal manfaat yang didapatkan untuk masyarakat... </p>
                         <a href="about.html" class="btn button-style mt-md-5 mt-4">Lebih lengkap</a>
                     </div>
@@ -173,7 +178,7 @@
     </section>
     <!-- tips -->
 
-    <!-- informasi -->
+   <!-- informasi -->
     <section class="banner-bottom-w3layouts bg-li py-5" id="services">
         <div class="container py-xl-5 py-lg-3">
             <h3 class="tittle text-center font-weight-bold">Informasi seputar COVID-19</h3>
@@ -301,36 +306,64 @@
         </div>
     </div>
     <!-- //copyright  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            var d = new Date();
-            var month = new Array();
-            month[0] = "Januari";
-            month[1] = "Februari";
-            month[2] = "Maret";
-            month[3] = "April";
-            month[4] = "Mei";
-            month[5] = "Juni";
-            month[6] = "Juli";
-            month[7] = "Agustus";
-            month[8] = "September";
-            month[9] = "Oktober";
-            month[10] = "November";
-            month[11] = "Desember";
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var d = new Date();
+        var month = new Array();
+        month[0] = "Januari";
+        month[1] = "Februari";
+        month[2] = "Maret";
+        month[3] = "April";
+        month[4] = "Mei";
+        month[5] = "Juni";
+        month[6] = "Juli";
+        month[7] = "Agustus";
+        month[8] = "September";
+        month[9] = "Oktober";
+        month[10] = "November";
+        month[11] = "Desember";
 
-            $("#date").html(d.getDate() + " " + month[d.getMonth()] + " " + d.getFullYear());
-            $.ajax({
-                url: "https://api.kawalcorona.com/indonesia/",
-                success: function(result) {
-                    $("#positif").html(result[0].positif);
-                    $("#sembuh").html(result[0].sembuh);
-                    $("#meninggal").html(result[0].meninggal);
-                }
-            });
+        $("#date").html(d.getDate() + " " + month[d.getMonth()] + " " + d.getFullYear());
+        $.ajax({
+            url: "https://api.kawalcorona.com/indonesia/",
+            success: function(result) {
+                $("#positif").html(result[0].positif);
+                $("#sembuh").html(result[0].sembuh);
+                $("#meninggal").html(result[0].meninggal);
+            }
         });
-    </script>
+    });
+</script>
+
 </body>
+<script>
+
+    // Loading Page
+    
+    var myVar;
+    
+    
+    
+    function myFunction() {
+    
+    myVar = setTimeout(showPage, 500);
+    
+    }
+    
+    
+    
+    function showPage() {
+    
+    document.getElementById("loader").style.display = "none";
+    
+    document.getElementById("myDiv").style.display = "block";
+    
+    }
+    
+    </script>
+
 
 
 </html>
+
