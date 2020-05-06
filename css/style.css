@@ -1,6 +1,7 @@
 /* Center the loader */
 
 #loader {
+
     position: absolute;
     left: 50%;
     top: 50%;
@@ -72,6 +73,108 @@
     display: none;
 }
 
+
+    position: absolute;
+    
+    left: 50%;
+    
+    top: 50%;
+    
+    z-index: 1;
+    
+    width: 150px;
+    
+    height: 150px;
+    
+    margin: -75px 0 0 -75px;
+    
+    border: 16px solid #f3f3f3;
+    
+    border-radius: 50%;
+    
+    border-top: 16px solid #3498db;
+    
+    width: 120px;
+    
+    height: 120px;
+    
+    -webkit-animation: spin 2s linear infinite;
+    
+    animation: spin 2s linear infinite;
+    
+    }
+    
+    
+    
+    @-webkit-keyframes spin {
+    
+    0% { -webkit-transform: rotate(0deg); }
+    
+    100% { -webkit-transform: rotate(360deg); }
+    
+    }
+    
+    
+    
+    @keyframes spin {
+    
+    0% { transform: rotate(0deg); }
+    
+    100% { transform: rotate(360deg); }
+    
+    }
+    
+    
+    
+    /* Add animation to "page content" */
+    
+    .animate-bottom {
+    
+    position: relative;
+    
+    -webkit-animation-name: animatebottom;
+    
+    -webkit-animation-duration: 1s;
+    
+    animation-name: animatebottom;
+    
+    animation-duration: 1s
+    
+    }
+    
+    
+    
+    @-webkit-keyframes animatebottom {
+    
+    from { bottom:-100px; opacity:0 }
+    
+    to { bottom:0px; opacity:1 }
+    
+    }
+    
+    
+    
+    @keyframes animatebottom {
+    
+    from{ bottom:-100px; opacity:0 }
+    
+    to{ bottom:0; opacity:1 }
+    
+    }
+    
+    
+    
+    #myDiv {
+    
+    display: none;
+    
+    }
+
+
+
+
+
+
 body {
     padding: 0;
     margin: 0;
@@ -87,6 +190,7 @@ body {
     height: 100%;
     z-index: 9999;
     background-color: #fff;
+
 }
 
 .preloader .loading {
@@ -97,6 +201,16 @@ body {
     font: 14px arial;
 }
 
+  }
+  .preloader .loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font: 14px arial;
+  }
+
+
 body button,
 .btn,
 body a {
@@ -106,6 +220,7 @@ body a {
     -o-transition: 0.5s all;
     -ms-transition: 0.5s all;
 }
+
 
 .rowtri {
     display: flex;
@@ -127,6 +242,24 @@ body a {
 }
 
 .tri3 {
+
+
+.rowtri{
+    display: flex;
+    justify-content: space-between;
+}
+.tri1,.tri2,.tri3{
+    box-shadow: 5px 7px 23px 0px rgba(58, 52, 82, 0.16);
+}
+
+.subtri{
+    margin-top: 30px;
+}
+.tri2{
+    margin-left: 30px;
+}
+.tri3{
+
     margin-left: 30px;
 }
 
@@ -1199,6 +1332,28 @@ li.breadcrumb-item {
 
 /* team */
 
+.team-wrapper {
+    background-color: #fff;
+}
+
+.ab-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
 h4.text-team-w3 {
     font-size: 20px;
     font-weight: 700;
@@ -1241,6 +1396,7 @@ ul.team-socil-w3pvts li span:hover {
     -webkit-box-shadow: 5px 7px 23px 0px rgba(58, 52, 82, 0.16);
     -moz-box-shadow: 5px 7px 23px 0px rgba(58, 52, 82, 0.16);
     box-shadow: 5px 7px 23px 0px rgba(58, 52, 82, 0.16);
+
 }
 
 .ab-content-inner-bawah {
@@ -1254,8 +1410,11 @@ ul.team-socil-w3pvts li span:hover {
 
 .ab-content-inner-bawah-tengah {
     padding: 3em;
+
+    width: 350x;
+    height: 290px;
+
     margin-top: 30px;
-    margin-left: -90px;
 }
 
 
@@ -1489,6 +1648,37 @@ button.btn-cont-w3 {
 
 
 /* responsive */
+
+@media all and (max-width: 1000px) {
+    .team-wrapper {
+        margin: auto;
+    }
+
+    .ab-content {
+        margin: auto;
+    }
+
+    .ab-content-inner {
+       
+        margin: auto;
+    }
+    
+    .ab-info {
+        margin: auto;
+    }
+}
+
+@media all and (max-width: 670px) {
+    .ab-content {
+        margin: auto;
+        display: inline-block;
+    }
+
+    .ab-content-inner {
+        margin: auto;
+    }
+}
+
 
 @media(max-width: 1366px) {
     h3.w3ls_pvt-title {
@@ -1833,15 +2023,31 @@ section.filosofi-logo {
 }
 
 div h1.capt-logo {
+
+/* STYLE FOR FILOSOFI */
+section.filosofi-logo{
+    background-color: rgb(233, 233, 233);
+    padding: 20px;
+}
+div h1.capt-logo{
+
     font-weight: bolder;
     font-size: 25px;
 }
+
 
 div p.filosofi1 {
     font-size: 17px;
 }
 
 section.filosofi-logo div.card h1 {
+
+div p.filosofi1{
+    font-size: 17px;
+}
+
+section.filosofi-logo div.card h1{
+
     font-size: 20px;
     font-weight: bolder;
 }
@@ -1851,11 +2057,25 @@ div.card.p-4.ukuran {
 }
 
 .for-shadow {
+
+div.card.p-4.ukuran{
+    height: 576px;
+}
+
+.for-shadow{
+
     -webkit-box-shadow: 0px 11px 10px 1px rgba(58, 52, 82, 0.1);
     -moz-box-shadow: 0px 11px 10px 1px rgba(58, 52, 82, 0.1);
     box-shadow: 0px 11px 10px 1px rgba(58, 52, 82, 0.1);
 }
 
+
 img.white {
     border: 1px solid grey;
 }
+
+img.white{
+    border: 1px solid grey;
+}
+
+
