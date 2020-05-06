@@ -1150,6 +1150,7 @@ ul.team-socil-w3pvts li span:hover {
     -o-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
+    width: 100px;
 }
 
 .ab-content-inner {
